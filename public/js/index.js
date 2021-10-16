@@ -11,7 +11,8 @@ $(document).ready(function () {
       try {
         const response = await fetch(
           //     `https://breakingbadapi.com/api/${name}/${number}`
-          `http://localhost:3000/weather?name=${name}&num=${number}`
+          // `http://localhost:3000/weather?name=${name}&num=${number}`
+          `/weather?name=${name}&num=${number}`
         );
         const data = await response.json();
 
