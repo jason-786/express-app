@@ -4,7 +4,7 @@ const request = require("request");
 const hbs = require("hbs");
 const breakingbadapi = require("../api/breaking-bad");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // make directory
 const publicDirectory = path.join(__dirname, "../public");
